@@ -1,0 +1,194 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav button {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#agregar-tarea {
+  padding: 1rem;
+  text-align: center;
+}
+
+#nueva-tarea {
+  padding: 0.5rem;
+  width: 60%;
+}
+
+#btn-agregar {
+  padding: 0.5rem 1rem;
+}
+
+#lista-tareas {
+  padding: 1rem;
+}
+
+.tarea {
+  background: white;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarea.completada {
+  text-decoration: line-through;
+  color: gray;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  background-size: 400% 400%;
+  animation: fondo 15s ease infinite;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+/* Animación del fondo */
+@keyframes fondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Inputs y botones */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+button {
+  margin-top: 12px;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #bb86fc;
+  border: none;
+  border-radius: 8px;
+  color: rgb(148, 19, 208);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #a45de5;
+}
+
+
+a {
+  color: #ffd6ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Vista tareas (contenedor grande) */
+#vista-tareas {
+  width: 100%;
+  max-width: 700px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+nav button {
+  flex: 1;
+  min-width: 100px;
+}
+
+nav button.active {
+  background-color: #3700b3;
+}
+
+
+#lista-tareas {
+  margin-top: 20px;
+}
+
+.tarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarea.completada span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.tarea div {
+  display: flex;
+  gap: 10px;
+}

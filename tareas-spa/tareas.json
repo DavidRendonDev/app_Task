@@ -1,0 +1,5 @@
+[
+  { "texto": "Aprender DOM en JS", "completada": false },
+  { "texto": "Terminar proyecto de tareas", "completada": true },
+  { "texto": "Subir proyecto a GitHub", "completada": false }
+]

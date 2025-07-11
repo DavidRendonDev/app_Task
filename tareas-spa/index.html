@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App de Tareas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Vista Bienvenida -->
+  <section id="vista-bienvenida">
+    <h1>👽 Bienvenido a Tu App de Tareas</h1>
+    <p>Organiza tus tareas de forma sencilla y personalizada.</p>
+    <button id="btn-ir-login">Iniciar sesión</button>
+    <p>¿No tienes cuenta? <a href="#" id="link-ir-registro">Regístrate aquí</a></p>
+  </section>
+
+  <!-- Vista Registro -->
+  <section id="vista-registro" style="display:none">
+    <h2>📝 Registro de Usuario</h2>
+    <input type="text" id="reg-nombre" placeholder="Nombre completo" />
+    <input type="email" id="reg-correo" placeholder="Correo electrónico" />
+    <input type="password" id="reg-password" placeholder="Contraseña" />
+    <button id="btn-registrarse">Registrarse</button>
+    <p>¿Ya tienes cuenta? <a href="#" id="link-ir-login">Inicia sesión aquí</a></p>
+  </section>
+
+  <!-- Vista Login -->
+  <section id="vista-login" style="display:none">
+    <h2>🔐 Iniciar Sesión</h2>
+    <input type="email" id="login-correo" placeholder="Correo electrónico" />
+    <input type="password" id="login-password" placeholder="Contraseña" />
+    <button id="btn-login">Entrar</button>
+    <p>¿Aún no tienes cuenta? <a href="#" id="link-volver-registro">Regístrate aquí</a></p>
+  </section>
+
+  <!-- Vista App Tareas -->
+  <section id="vista-tareas" style="display:none">
+    <header>
+      <h1>📝 Mis Tareas</h1>
+      <p id="nombre-usuario"></p>
+      <nav>
+        <button id="ver-todas">Todas</button>
+        <button id="ver-completadas">Completadas</button>
+        <button id="btn-logout">Cerrar sesión</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="agregar-tarea">
+        <input type="text" id="nueva-tarea" placeholder="Escribe una tarea..." />
+        <button id="btn-agregar">Agregar</button>
+      </section>
+
+      <section id="lista-tareas">
+        <!-- Aquí se muestran las tareas -->
+      </section>
+    </main>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
